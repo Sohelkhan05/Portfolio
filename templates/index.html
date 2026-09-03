@@ -1,0 +1,91 @@
+{% extends 'base.html' %}
+
+{% block title %}
+  Home | Sohelkan Pathan
+{% endblock %}
+
+{% block content %}
+  <section class="hero">
+    <div class="container hero-container">
+      <div class="hero-content">
+        <p class="hello">Hello, I'm</p>
+
+        <h1>Sohelkhan <span>Pathan</span></h1>
+
+        <h2><span id="typing"></span></h2>
+
+        <p class="hero-description">I am an MCA student and passionate developer focused on Python, Full Stack Development, Data Analytics and Machine Learning.</p>
+
+        <div class="hero-buttons">
+          <a href="{{ url_for('projects') }}" class="btn primary-btn">View Projects</a>
+
+          <a href="/static/resume/resume.pdf" class="btn secondary-btn" target="_blank">Download Resume</a>
+        </div>
+
+        <div class="social-icons">
+          <a href="https://github.com/Sohelkhan05" target="_blank">GitHub</a>
+
+          <a href="https://www.linkedin.com/in/sohelpathan115/" target="_blank">LinkedIn</a>
+
+          <a href="mailto:pathansohel9252@gmail.com">Email</a>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <div class="image-circle">
+          <img src="{{ url_for('static', filename='images/profile.png') }}" alt="Sohelkhan Pathan" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="objective section">
+    <div class="container">
+      <div class="section-title">
+        <p>My Goal</p>
+
+        <h2>Career <span>Objective</span></h2>
+      </div>
+
+      <div class="objective-card">
+        <p>To build a successful career as a Python and Full Stack Developer by developing scalable, responsive and user-friendly applications while continuously improving my technical and problem-solving skills.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="quick-section section">
+    <div class="container">
+      <div class="section-title">
+        <p>What I Do</p>
+
+        <h2>My <span>Expertise</span></h2>
+      </div>
+
+      <div class="cards">
+        <div class="info-card">
+          <div class="card-icon">🐍</div>
+
+          <h3>Python Development</h3>
+
+          <p>Building applications using Python, Flask, Django and data libraries.</p>
+        </div>
+
+        <div class="info-card">
+          <div class="card-icon">🌐</div>
+
+          <h3>Full Stack Development</h3>
+
+          <p>Creating responsive and modern web applications.</p>
+        </div>
+
+        <div class="info-card">
+          <div class="card-icon">💻</div>
+
+          <h3>Frontend Development</h3>
+
+          <p>Responsive and interactive web development using HTML, CSS, JavaScript and React.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock %}

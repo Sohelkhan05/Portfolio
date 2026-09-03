@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Sohelkan Pathan - Python Developer and Full Stack Developer">
+
+    <title>
+        {% block title %}Sohelkhan Pathan | Developer{% endblock %}
+    </title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <div class="container nav-container">
+
+        <a href="{{ url_for('home') }}" class="logo">
+            Sohel<span>khan</span>
+        </a>
+
+        <button class="menu-btn" id="menuBtn">
+            ☰
+        </button>
+
+        <nav id="navMenu">
+
+            <a href="{{ url_for('home') }}"
+               class="{{ 'active' if request.endpoint == 'home' else '' }}">
+                Home
+            </a>
+
+            <a href="{{ url_for('about') }}"
+               class="{{ 'active' if request.endpoint == 'about' else '' }}">
+                About
+            </a>
+
+            <a href="{{ url_for('skills') }}"
+               class="{{ 'active' if request.endpoint == 'skills' else '' }}">
+                Skills
+            </a>
+
+            <a href="{{ url_for('projects') }}"
+               class="{{ 'active' if request.endpoint == 'projects' else '' }}">
+                Projects
+            </a>
+
+            <a href="{{ url_for('education') }}"
+               class="{{ 'active' if request.endpoint == 'education' else '' }}">
+                Education
+            </a>
+
+            <a href="{{ url_for('contact') }}"
+               class="{{ 'active' if request.endpoint == 'contact' else '' }}">
+                Contact
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<main>
+
+    {% block content %}
+    {% endblock %}
+
+</main>
+
+
+<footer>
+
+    <div class="container footer-content">
+
+        <div>
+            <h3>Sohelkhan Pathan</h3>
+            <p>
+                Python Developer & Full Stack Developer
+            </p>
+        </div>
+
+        <div class="social-links">
+
+            <a href="https://github.com/Sohelkhan05"
+               target="_blank">
+                GitHub
+            </a>
+
+            <a href="https://www.linkedin.com/in/sohelpathan115/"
+               target="_blank">
+                LinkedIn
+            </a>
+
+            <a href="mailto:pathansohel9252@gmail.com">
+                Email
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="copyright">
+        © 2026 Sohelkan Pathan. All Rights Reserved.
+    </div>
+
+</footer>
+
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+</html>

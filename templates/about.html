@@ -1,0 +1,93 @@
+{% extends "base.html" %}
+
+{% block title %}
+About | Sohelkan Pathan
+{% endblock %}
+
+
+{% block content %}
+
+<section class="page-header">
+
+    <div class="container">
+
+        <h1>About <span>Me</span></h1>
+
+        <p>
+            Get to know me and my development journey.
+        </p>
+
+    </div>
+
+</section>
+
+
+<section class="section">
+
+    <div class="container about-container">
+
+        <div class="about-image">
+
+            <img src="{{ url_for('static',
+                       filename='images/profile.png') }}"
+                 alt="Sohelkan Pathan">
+
+        </div>
+
+
+        <div class="about-content">
+
+            <p class="small-title">
+                Who I Am
+            </p>
+
+            <h2>
+                Passionate Developer &
+                <span>Problem Solver</span>
+            </h2>
+
+            <p>
+
+                I am an MCA student and passionate software
+                developer with a strong interest in Python,
+                Full Stack Development, Data Analytics and
+                Machine Learning.
+
+            </p>
+
+            <p>
+
+                I enjoy creating practical applications that
+                solve real-world problems. I am continuously
+                learning new technologies and improving my
+                programming and problem-solving skills.
+
+            </p>
+
+
+            <div class="about-stats">
+
+                <div>
+                    <strong>MCA</strong>
+                    <span>Student</span>
+                </div>
+
+                <div>
+                    <strong>Python</strong>
+                    <span>Developer</span>
+                </div>
+
+                <div>
+                    <strong>Full Stack</strong>
+                    <span>Developer</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}

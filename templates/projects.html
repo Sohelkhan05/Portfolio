@@ -1,0 +1,229 @@
+{% extends "base.html" %}
+
+{% block title %}
+Projects | Sohelkan Pathan
+{% endblock %}
+
+
+{% block content %}
+
+<section class="page-header">
+
+    <div class="container">
+
+        <h1>My <span>Projects</span></h1>
+
+        <p>
+            Some of my recent development work.
+        </p>
+
+    </div>
+
+</section>
+
+
+<section class="section">
+
+    <div class="container">
+
+        <div class="projects-grid">
+
+
+            <!-- PROJECT 1 -->
+
+            <div class="project-card">
+
+                <img src="{{ url_for('static',
+                           filename='images/project1.jpg') }}"
+                     alt="Student Management System">
+
+                <div class="project-content">
+
+                    <h3>
+                        Student Management System
+                    </h3>
+
+                    <p>
+
+                        A CRUD based student management
+                        application for managing student
+                        information.
+
+                    </p>
+
+                    <div class="tech">
+
+                        <span>React.js</span>
+                        <span>Node.js</span>
+                        <span>MongoDB</span>
+
+                    </div>
+
+                    <div class="project-buttons">
+
+                        <a href="https://github.com/Sohelkhan05/Student-Dashboard"
+                           class="btn small-btn">
+                            GitHub
+                        </a>
+
+                        <a href="#"
+                           class="btn small-btn">
+                             cooming soon
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PROJECT 2 -->
+
+            <div class="project-card">
+
+                <img src="{{ url_for('static',
+                           filename='images/project2.jpg') }}"
+                     alt="Data Analysis">
+
+                <div class="project-content">
+
+                    <h3>
+                        Data Analysis Using ML
+                    </h3>
+
+                    <p>
+
+                        Data analysis and machine learning
+                        project using Python and Scikit-learn.
+
+                    </p>
+
+                    <div class="tech">
+
+                        <span>Python</span>
+                        <span>Pandas</span>
+                        <span>ML</span>
+
+                    </div>
+
+                    <div class="project-buttons">
+
+                        <a href="https://github.com/Sohelkhan05/Data-Analysis-Using-ML"
+                           class="btn small-btn">
+                            GitHub
+                        </a>
+
+                        <a href="https://data-analysis-using-ml.onrender.com/"
+                           class="btn small-btn">
+                            View site
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PROJECT 3 -->
+
+            <div class="project-card">
+
+                <img src="{{ url_for('static',
+                           filename='images/project3.jpg') }}"
+                     alt="Sales Analysis">
+
+                <div class="project-content">
+
+                    <h3>
+                        Plant Selling Website - Greenhub
+                    </h3>
+
+                    <p>
+
+                        A modern and responsive Pant Selling Website designed to provide a smooth online shopping experience.
+
+                    </p>
+
+                    <div class="tech">
+
+                        <span>MERN</span>
+                        <span>Postman</span>
+                        <span>Cloudinary</span>
+
+                    </div>
+
+                    <div class="project-buttons">
+
+                        <a href="https://github.com/Sohelkhan05/Greenhub"
+                           class="btn small-btn">
+                            GitHub
+                        </a>
+
+                        <a href="https://greenhub-ldrp.vercel.app"
+                           class="btn small-btn">
+                            View site
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PROJECT 4 -->
+
+            <div class="project-card">
+
+                <img src="{{ url_for('static',
+                           filename='images/project4.jpg') }}"
+                     alt="Student Dashboard">
+
+                <div class="project-content">
+
+                    <h3>
+                        Hotel Booking Website - Stayfinder
+                    </h3>
+
+                    <p>
+
+                        A modern hotel booking website that allows users to search hotels, view room details, check availability, make reservations, and manage bookings.
+
+                    </p>
+
+                    <div class="tech">
+
+                        <span>PHP</span>
+                        <span>MySQL</span>
+                        <span>phpmyadmin</span>
+
+                    </div>
+
+                    <div class="project-buttons">
+
+                        <a href="https://github.com/Sohelkhan05/Stayfinder"
+                           class="btn small-btn">
+                            GitHub
+                        </a>
+
+                        <a href="#"
+                           class="btn small-btn">
+                            Cooming soon
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}
