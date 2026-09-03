@@ -162,4 +162,8 @@ This portfolio is deployed using **Vercel** for fast and free hosting.
 
 If you like this project, don't forget to ⭐ **Star** this repository and follow me on GitHub.
 
+<<<<<<< HEAD
 Made with ❤️ by **Sohelkhan Pathan**
+=======
+Made with ❤️ by **Sohelkhan Pathan**
+>>>>>>> 3450a3f (Fix resume download path)
